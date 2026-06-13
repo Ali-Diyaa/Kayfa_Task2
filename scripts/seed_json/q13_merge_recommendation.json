@@ -1,0 +1,1 @@
+{"small_group": "G10", "size": 1, "closest_student_match": {"g10_student": "S0500", "target_student": "S0397", "target_group": "G08"}, "centroid_closest_group": "G08", "recommendation": "Merge G10 into G08 \u2013 concept profile closest, preserves cohort balance."}

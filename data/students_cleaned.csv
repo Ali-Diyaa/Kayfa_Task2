@@ -1,0 +1,501 @@
+student_id,full_name,age,gender,city,email,group_id,enrollment_date
+S0001,Hana Gamal,27,Female,Mansoura,hana.gamal.s0001@kayfa-student.io,G03,2025-12-14
+S0002,Mona Abdelaziz,25,Female,Zagazig,mona.abdelaziz.s0002@kayfa-student.io,G06,2025-12-03
+S0003,Menna Naguib,20,Female,Ismailia,menna.naguib.s0003@kayfa-student.io,G05,2025-12-17
+S0004,Aya ElShafei,21,Female,Giza,aya.elshafei.s0004@kayfa-student.io,G02,2025-12-12
+S0005,Habiba Mahmoud,24,Female,Giza,habiba.mahmoud.s0005@kayfa-student.io,G01,2025-12-14
+S0006,Aya ElSayed,18,Female,Zagazig,aya.elsayed.s0006@kayfa-student.io,G07,2025-12-06
+S0007,Omar Darwish,25,Male,Asyut,omar.darwish.s0007@kayfa-student.io,G04,2025-12-14
+S0008,Mona Gamal,25,Female,Zagazig,mona.gamal.s0008@kayfa-student.io,G04,2025-12-04
+S0009,Mahmoud Awad,23,Male,Ismailia,mahmoud.awad.s0009@kayfa-student.io,G01,2025-12-05
+S0010,Abdelrahman ElBaz,25,Male,Mansoura,abdelrahman.elbaz.s0010@kayfa-student.io,G05,2025-12-02
+S0011,Menna Saad,25,Female,Alexandria,menna.saad.s0011@kayfa-student.io,G08,2025-12-08
+S0012,Ziad Gamal,20,Male,Port Said,ziad.gamal.s0012@kayfa-student.io,G04,2025-12-15
+S0013,Hassan Zaki,21,Male,Giza,hassan.zaki.s0013@kayfa-student.io,G07,2025-12-08
+S0014,Ali Refaat,0,Male,Ismailia,ali.refaat.s0014@kayfa-student.io,G10,2025-12-18
+S0015,Fady ElMasry,25,Male,Asyut,fady.elmasry.s0015@kayfa-student.io,G02,2025-12-08
+S0016,Mostafa Halim,22,Male,Zagazig,mostafa.halim.s0016@kayfa-student.io,G01,2025-12-14
+S0017,Tarek ElMasry,18,Male,Tanta,tarek.elmasry.s0017@kayfa-student.io,G02,2025-12-06
+S0018,Malak Abdelaziz,23,Female,Asyut,malak.abdelaziz.s0018@kayfa-student.io,G09,2025-12-16
+S0019,Tarek Naguib,23,Male,Port Said,tarek.naguib.s0019@kayfa-student.io,G04,2025-12-04
+S0020,Mostafa ElGhandour,24,Male,Mansoura,mostafa.elghandour.s0020@kayfa-student.io,G06,2025-12-10
+S0021,Abdelrahman Mahmoud,18,Male,Fayoum,abdelrahman.mahmoud.s0021@kayfa-student.io,G01,2025-12-05
+S0022,Ziad Kamel,22,Male,Alexandria,ziad.kamel.s0022@kayfa-student.io,G02,2025-12-20
+S0023,Tarek Gamal,0,Male,Mansoura,tarek.gamal.s0023@kayfa-student.io,G08,2025-12-19
+S0024,Hossam ElBaz,24,Male,Ismailia,hossam.elbaz.s0024@kayfa-student.io,G09,2025-12-16
+S0025,Jana ElMasry,18,Female,Mansoura,jana.elmasry.s0025@kayfa-student.io,G06,2025-12-09
+S0026,Mohamed ElShafei,26,Male,Port Said,mohamed.elshafei.s0026@kayfa-student.io,G04,2025-12-02
+S0027,Youssef Ramadan,24,Male,Cairo,youssef.ramadan.s0027@kayfa-student.io,G04,2025-12-01
+S0028,Mariam Gamal,20,Female,Mansoura,mariam.gamal.s0028@kayfa-student.io,G06,2025-12-02
+S0029,Abdelrahman ElShafei,24,Male,Mansoura,abdelrahman.elshafei.s0029@kayfa-student.io,G09,2025-12-03
+S0030,Hossam Abdelaziz,20,Male,Ismailia,hossam.abdelaziz.s0030@kayfa-student.io,G08,2025-12-17
+S0031,Menna Nasr,19,Female,Giza,menna.nasr.s0031@kayfa-student.io,G06,2025-12-09
+S0032,Hana Awad,19,Female,Mansoura,hana.awad.s0032@kayfa-student.io,G01,2025-12-09
+S0033,Laila Saad,18,Female,Alexandria,laila.saad.s0033@kayfa-student.io,G04,2025-12-04
+S0034,Omar ElMasry,23,Male,Cairo,omar.elmasry.s0034@kayfa-student.io,G05,2025-12-10
+S0035,Khaled Kamel,24,Male,Alexandria,khaled.kamel.s0035@kayfa-student.io,G09,2025-12-17
+S0036,Sherif Nasr,20,Male,Cairo,sherif.nasr.s0036@kayfa-student.io,G07,2025-12-10
+S0037,Mona Gamal,23,Female,Tanta,mona.gamal.s0037@kayfa-student.io,G03,2025-12-08
+S0038,Seif Halim,27,Male,Alexandria,seif.halim.s0038@kayfa-student.io,G07,2025-12-14
+S0039,Youssef ElShafei,21,Male,Zagazig,youssef.elshafei.s0039@kayfa-student.io,G04,2025-12-06
+S0040,Esraa Zaki,19,Female,Cairo,esraa.zaki.s0040@kayfa-student.io,G01,2025-12-02
+S0041,Amr Mahmoud,20,Male,Mansoura,amr.mahmoud.s0041@kayfa-student.io,G09,2025-12-02
+S0042,Abdelrahman Ramadan,19,Male,Port Said,abdelrahman.ramadan.s0042@kayfa-student.io,G07,2025-12-03
+S0043,Marwan ElShafei,18,Male,Tanta,marwan.elshafei.s0043@kayfa-student.io,G02,2025-12-09
+S0044,Yasmin Ramadan,0,Female,Ismailia,yasmin.ramadan.s0044@kayfa-student.io,G04,2025-12-14
+S0045,Farida ElMasry,23,Female,Giza,farida.elmasry.s0045@kayfa-student.io,G03,2025-12-14
+S0046,Abdelrahman Abdelaziz,21,Male,Asyut,abdelrahman.abdelaziz.s0046@kayfa-student.io,G01,2025-12-10
+S0047,Hassan ElGhandour,28,Male,Mansoura,hassan.elghandour.s0047@kayfa-student.io,G04,2025-12-11
+S0048,Laila Habib,21,Female,Port Said,laila.habib.s0048@kayfa-student.io,G06,2025-12-06
+S0049,Seif Mansour,22,Male,Alexandria,seif.mansour.s0049@kayfa-student.io,G09,2025-12-01
+S0050,Karim Sultan,23,Male,Tanta,karim.sultan.s0050@kayfa-student.io,G05,2025-12-03
+S0051,Hana Fathy,29,Female,Asyut,hana.fathy.s0051@kayfa-student.io,G05,2025-12-13
+S0052,Youssef Mahmoud,25,Male,Tanta,youssef.mahmoud.s0052@kayfa-student.io,G08,2025-12-06
+S0053,Hassan Refaat,27,Male,Alexandria,hassan.refaat.s0053@kayfa-student.io,G01,2025-12-01
+S0054,Nada Naguib,23,Female,Giza,nada.naguib.s0054@kayfa-student.io,G08,2025-12-12
+S0055,Ali Naguib,21,Male,Zagazig,ali.naguib.s0055@kayfa-student.io,G02,2025-12-19
+S0056,Hassan Ibrahim,20,Male,Zagazig,hassan.ibrahim.s0056@kayfa-student.io,G09,2025-12-03
+S0057,Sherif Halim,19,Male,Giza,sherif.halim.s0057@kayfa-student.io,G01,2025-12-18
+S0058,Sara Darwish,0,Female,Mansoura,sara.darwish.s0058@kayfa-student.io,G06,2025-12-16
+S0059,Amr Soliman,21,Male,Alexandria,amr.soliman.s0059@kayfa-student.io,G03,2025-12-20
+S0060,Sara Awad,19,Female,Tanta,sara.awad.s0060@kayfa-student.io,G06,2025-12-16
+S0061,Karim AbdelHamid,18,Male,Fayoum,karim.abdelhamid.s0061@kayfa-student.io,G03,2025-12-16
+S0062,Menna ElGhandour,22,Female,Mansoura,menna.elghandour.s0062@kayfa-student.io,G04,2025-12-04
+S0063,Hossam AbdelHamid,21,Male,Tanta,hossam.abdelhamid.s0063@kayfa-student.io,G04,2025-12-01
+S0064,Salma ElGhandour,22,Female,Asyut,salma.elghandour.s0064@kayfa-student.io,G02,2025-12-20
+S0065,Mostafa Gamal,22,Male,Port Said,mostafa.gamal.s0065@kayfa-student.io,G06,2025-12-19
+S0066,Fady Soliman,20,Male,Zagazig,fady.soliman.s0066@kayfa-student.io,G05,2025-12-01
+S0067,Malak Abdelaziz,24,Female,Port Said,malak.abdelaziz.s0067@kayfa-student.io,G07,2025-12-13
+S0068,Nada Hassan,27,Female,Zagazig,nada.hassan.s0068@kayfa-student.io,G04,2025-12-06
+S0069,Hana Darwish,25,Female,Giza,hana.darwish.s0069@kayfa-student.io,G07,2025-12-02
+S0070,Sara Shawky,19,Female,Tanta,sara.shawky.s0070@kayfa-student.io,G05,2025-12-11
+S0071,Sara Halim,0,Female,Alexandria,sara.halim.s0071@kayfa-student.io,G09,2025-12-03
+S0072,Ahmed Mansour,23,Male,Mansoura,ahmed.mansour.s0072@kayfa-student.io,G05,2025-12-09
+S0073,Fady Refaat,21,Male,Fayoum,fady.refaat.s0073@kayfa-student.io,G07,2025-12-16
+S0074,Sherif Zaki,25,Male,Alexandria,sherif.zaki.s0074@kayfa-student.io,G08,2025-12-09
+S0075,Hana Mahmoud,22,Female,Tanta,hana.mahmoud.s0075@kayfa-student.io,G02,2025-12-06
+S0076,Ali Hassan,24,Male,Mansoura,ali.hassan.s0076@kayfa-student.io,G04,2025-12-17
+S0077,Omar ElMasry,18,Male,Port Said,omar.elmasry.s0077@kayfa-student.io,G08,2025-12-13
+S0078,Mona Farouk,19,Female,Mansoura,mona.farouk.s0078@kayfa-student.io,G04,2025-12-15
+S0079,Ahmed Kamel,21,Male,Ismailia,ahmed.kamel.s0079@kayfa-student.io,G03,2025-12-14
+S0080,Jana ElMasry,0,Female,Asyut,jana.elmasry.s0080@kayfa-student.io,G04,2025-12-04
+S0081,Mostafa ElMasry,21,Male,Fayoum,mostafa.elmasry.s0081@kayfa-student.io,G04,2025-12-19
+S0082,Fady Shawky,0,Male,Port Said,fady.shawky.s0082@kayfa-student.io,G09,2025-12-20
+S0083,Seif ElMasry,26,Male,Fayoum,seif.elmasry.s0083@kayfa-student.io,G09,2025-12-09
+S0084,Mariam Habib,20,Female,Asyut,mariam.habib.s0084@kayfa-student.io,G08,2025-12-06
+S0085,Salma ElMasry,24,Female,Tanta,salma.elmasry.s0085@kayfa-student.io,G08,2025-12-13
+S0086,Yasmin Naguib,24,Female,Alexandria,yasmin.naguib.s0086@kayfa-student.io,G04,2025-12-06
+S0087,Ali ElBaz,23,Male,Giza,ali.elbaz.s0087@kayfa-student.io,G03,2025-12-05
+S0088,Ziad ElMasry,0,Male,Cairo,ziad.elmasry.s0088@kayfa-student.io,G07,2025-12-09
+S0089,Mona Kamel,23,Female,Port Said,mona.kamel.s0089@kayfa-student.io,G04,2025-12-17
+S0090,Rana Mansour,20,Female,Ismailia,rana.mansour.s0090@kayfa-student.io,G07,2025-12-10
+S0091,Ziad Awad,25,Male,Fayoum,ziad.awad.s0091@kayfa-student.io,G09,2025-12-15
+S0092,Rowan Hassan,0,Female,Zagazig,rowan.hassan.s0092@kayfa-student.io,G04,2025-12-06
+S0093,Menna Saad,20,Female,Ismailia,menna.saad.s0093@kayfa-student.io,G07,2025-12-15
+S0094,Nada Saad,24,Female,Alexandria,nada.saad.s0094@kayfa-student.io,G01,2025-12-02
+S0095,Yasmin Fathy,22,Female,Zagazig,yasmin.fathy.s0095@kayfa-student.io,G10,2025-12-06
+S0096,Mona Gamal,25,Female,Tanta,mona.gamal.s0096@kayfa-student.io,G06,2025-12-16
+S0097,Ziad Ibrahim,20,Male,Mansoura,ziad.ibrahim.s0097@kayfa-student.io,G02,2025-12-10
+S0098,Mahmoud Kamel,25,Male,Mansoura,mahmoud.kamel.s0098@kayfa-student.io,G02,2025-12-16
+S0099,Ali Ramadan,26,Male,Fayoum,ali.ramadan.s0099@kayfa-student.io,G04,2025-12-17
+S0100,Sherif ElMasry,20,Male,Zagazig,sherif.elmasry.s0100@kayfa-student.io,G02,2025-12-12
+S0101,Mostafa Kamel,22,Male,Tanta,mostafa.kamel.s0101@kayfa-student.io,G03,2025-12-13
+S0102,Farida ElShafei,30,Female,Ismailia,farida.elshafei.s0102@kayfa-student.io,G02,2025-12-12
+S0103,Mariam Abdelaziz,20,Female,Port Said,mariam.abdelaziz.s0103@kayfa-student.io,G04,2025-12-02
+S0104,Abdelrahman Awad,23,Male,Zagazig,abdelrahman.awad.s0104@kayfa-student.io,G02,2025-12-16
+S0105,Aya Mahmoud,20,Female,Cairo,aya.mahmoud.s0105@kayfa-student.io,G09,2025-12-09
+S0106,Karim Soliman,19,Male,Fayoum,karim.soliman.s0106@kayfa-student.io,G07,2025-12-17
+S0107,Jana Refaat,20,Female,Port Said,jana.refaat.s0107@kayfa-student.io,G03,2025-12-09
+S0108,Menna Soliman,23,Female,Zagazig,menna.soliman.s0108@kayfa-student.io,G09,2025-12-16
+S0109,Khaled Gamal,22,Male,Mansoura,khaled.gamal.s0109@kayfa-student.io,G04,2025-12-17
+S0110,Mona Shawky,22,Female,Fayoum,mona.shawky.s0110@kayfa-student.io,G08,2025-12-12
+S0111,Sherif ElGhandour,27,Male,Zagazig,sherif.elghandour.s0111@kayfa-student.io,G06,2025-12-04
+S0112,Salma Naguib,20,Female,Asyut,salma.naguib.s0112@kayfa-student.io,G05,2025-12-18
+S0113,Sara Farouk,23,Female,Fayoum,sara.farouk.s0113@kayfa-student.io,G04,2025-12-02
+S0114,Mohamed Mahmoud,21,Male,Mansoura,mohamed.mahmoud.s0114@kayfa-student.io,G08,2025-12-09
+S0115,Farida Halim,24,Female,Fayoum,farida.halim.s0115@kayfa-student.io,G07,2025-12-14
+S0116,Nada Sultan,21,Female,Zagazig,nada.sultan.s0116@kayfa-student.io,G09,2025-12-11
+S0117,Nour Ramadan,24,Female,Mansoura,nour.ramadan.s0117@kayfa-student.io,G08,2025-12-06
+S0118,Ziad Kamel,19,Male,Mansoura,ziad.kamel.s0118@kayfa-student.io,G06,2025-12-03
+S0119,Salma Sultan,20,Female,Giza,salma.sultan.s0119@kayfa-student.io,G04,2025-12-15
+S0120,Aya ElSayed,20,Female,Cairo,aya.elsayed.s0120@kayfa-student.io,G04,2025-12-06
+S0121,Mahmoud Ibrahim,21,Male,Alexandria,mahmoud.ibrahim.s0121@kayfa-student.io,G09,2025-12-03
+S0122,Ahmed ElShafei,24,Male,Fayoum,ahmed.elshafei.s0122@kayfa-student.io,G08,2025-12-03
+S0123,Amr Ibrahim,25,Male,Fayoum,amr.ibrahim.s0123@kayfa-student.io,G08,2025-12-09
+S0124,Dina Farouk,29,Female,Port Said,dina.farouk.s0124@kayfa-student.io,G02,2025-12-17
+S0125,Abdelrahman Mansour,28,Male,Mansoura,abdelrahman.mansour.s0125@kayfa-student.io,G01,2025-12-04
+S0126,Sara Darwish,21,Female,Asyut,sara.darwish.s0126@kayfa-student.io,G02,2025-12-12
+S0127,Laila Mansour,25,Female,Tanta,laila.mansour.s0127@kayfa-student.io,G07,2025-12-10
+S0128,Karim Kamel,0,Male,Mansoura,karim.kamel.s0128@kayfa-student.io,G01,2025-12-13
+S0129,Tarek Ramadan,21,Male,Asyut,tarek.ramadan.s0129@kayfa-student.io,G05,2025-12-14
+S0130,Sara ElMasry,23,Female,Tanta,sara.elmasry.s0130@kayfa-student.io,G02,2025-12-04
+S0131,Habiba ElBaz,22,Female,Giza,habiba.elbaz.s0131@kayfa-student.io,G01,2025-12-05
+S0132,Marwan Halim,23,Male,Ismailia,marwan.halim.s0132@kayfa-student.io,G04,2025-12-19
+S0133,Ali Gamal,21,Male,Giza,ali.gamal.s0133@kayfa-student.io,G02,2025-12-11
+S0134,Farida Darwish,22,Female,Fayoum,farida.darwish.s0134@kayfa-student.io,G01,2025-12-04
+S0135,Farida Elbaz,25,Female,Tanta,farida.elbaz.s0135@kayfa-student.io,G02,2025-12-10
+S0136,Laila Mahmoud,18,Female,Ismailia,laila.mahmoud.s0136@kayfa-student.io,G09,2025-12-11
+S0137,Mohamed Mahmoud,25,Male,Port Said,mohamed.mahmoud.s0137@kayfa-student.io,G06,2025-12-13
+S0138,Salma ElShafei,21,Female,Alexandria,salma.elshafei.s0138@kayfa-student.io,G01,2025-12-20
+S0139,Laila Gamal,20,Female,Port Said,laila.gamal.s0139@kayfa-student.io,G08,2025-12-11
+S0140,Rowan Mahmoud,0,Female,Zagazig,rowan.mahmoud.s0140@kayfa-student.io,G07,2025-12-13
+S0141,Karim Nasr,25,Male,Zagazig,karim.nasr.s0141@kayfa-student.io,G07,2025-12-07
+S0142,Habiba Halim,0,Female,Asyut,habiba.halim.s0142@kayfa-student.io,G07,2025-12-14
+S0143,Yasmin Gamal,19,Female,Giza,yasmin.gamal.s0143@kayfa-student.io,G01,2025-12-10
+S0144,Ahmed Halim,23,Male,Ismailia,ahmed.halim.s0144@kayfa-student.io,G07,2025-12-18
+S0145,Aya Darwish,19,Female,Fayoum,aya.darwish.s0145@kayfa-student.io,G01,2025-12-04
+S0146,Seif Saad,22,Male,Fayoum,seif.saad.s0146@kayfa-student.io,G01,2025-12-05
+S0147,Fady Awad,0,Male,Alexandria,fady.awad.s0147@kayfa-student.io,G08,2025-12-03
+S0148,Seif Soliman,19,Male,Mansoura,seif.soliman.s0148@kayfa-student.io,G05,2025-12-12
+S0149,Mostafa Refaat,25,Male,Fayoum,mostafa.refaat.s0149@kayfa-student.io,G02,2025-12-10
+S0150,Salma Soliman,25,Female,Fayoum,salma.soliman.s0150@kayfa-student.io,G05,2025-12-11
+S0151,Ali AbdelHamid,18,Male,Port Said,ali.abdelhamid.s0151@kayfa-student.io,G04,2025-12-10
+S0152,Hassan Nasr,23,Male,Tanta,hassan.nasr.s0152@kayfa-student.io,G09,2025-12-15
+S0153,Malak Gamal,23,Female,Tanta,malak.gamal.s0153@kayfa-student.io,G07,2025-12-07
+S0154,Marwan Halim,20,Male,Alexandria,marwan.halim.s0154@kayfa-student.io,G05,2025-12-17
+S0155,Rana Shawky,26,Female,Fayoum,rana.shawky.s0155@kayfa-student.io,G08,2025-12-11
+S0156,Mariam ElShafei,24,Female,Mansoura,mariam.elshafei.s0156@kayfa-student.io,G06,2025-12-18
+S0157,Esraa ElBaz,23,Female,Ismailia,esraa.elbaz.s0157@kayfa-student.io,G07,2025-12-01
+S0158,Mahmoud Saad,26,Male,Giza,mahmoud.saad.s0158@kayfa-student.io,G03,2025-12-10
+S0159,Menna Hassan,22,Female,Ismailia,menna.hassan.s0159@kayfa-student.io,G08,2025-12-02
+S0160,Nour Shawky,20,Female,Giza,nour.shawky.s0160@kayfa-student.io,G03,2025-12-02
+S0161,Ziad AbdelHamid,22,Male,Fayoum,ziad.abdelhamid.s0161@kayfa-student.io,G06,2025-12-18
+S0162,Omar Ramadan,19,Male,Mansoura,omar.ramadan.s0162@kayfa-student.io,G09,2025-12-01
+S0163,Karim Kamel,20,Male,Fayoum,karim.kamel.s0163@kayfa-student.io,G02,2025-12-09
+S0164,Mohamed Ibrahim,0,Male,Cairo,mohamed.ibrahim.s0164@kayfa-student.io,G03,2025-12-14
+S0165,Nada Saad,21,Female,Asyut,nada.saad.s0165@kayfa-student.io,G05,2025-12-08
+S0166,Amr ElSayed,25,Male,Giza,amr.elsayed.s0166@kayfa-student.io,G07,2025-12-12
+S0167,Mariam Farouk,24,Female,Mansoura,mariam.farouk.s0167@kayfa-student.io,G07,2025-12-13
+S0168,Menna Gamal,0,Female,Fayoum,menna.gamal.s0168@kayfa-student.io,G08,2025-12-13
+S0169,Tarek Mahmoud,25,Male,Zagazig,tarek.mahmoud.s0169@kayfa-student.io,G05,2025-12-14
+S0170,Nada ElBaz,22,Female,Fayoum,nada.elbaz.s0170@kayfa-student.io,G05,2025-12-13
+S0171,Mona Nasr,22,Female,Giza,mona.nasr.s0171@kayfa-student.io,G05,2025-12-04
+S0172,Rana ElShafei,24,Female,Tanta,rana.elshafei.s0172@kayfa-student.io,G04,2025-12-08
+S0173,Dina Gamal,19,Female,Port Said,dina.gamal.s0173@kayfa-student.io,G01,2025-12-20
+S0174,Rowan Habib,27,Female,Mansoura,rowan.habib.s0174@kayfa-student.io,G01,2025-12-19
+S0175,Hossam Darwish,0,Male,Alexandria,hossam.darwish.s0175@kayfa-student.io,G06,2025-12-05
+S0176,Mahmoud Mansour,23,Male,Cairo,mahmoud.mansour.s0176@kayfa-student.io,G02,2025-12-19
+S0177,Khaled Mansour,24,Male,Ismailia,khaled.mansour.s0177@kayfa-student.io,G06,2025-12-15
+S0178,Ziad ElGhandour,22,Male,Alexandria,ziad.elghandour.s0178@kayfa-student.io,G03,2025-12-05
+S0179,Esraa Awad,0,Female,Zagazig,esraa.awad.s0179@kayfa-student.io,G05,2025-12-19
+S0180,Omar Saad,26,Male,Ismailia,omar.saad.s0180@kayfa-student.io,G02,2025-12-10
+S0181,Dina Hassan,19,Female,Asyut,dina.hassan.s0181@kayfa-student.io,G09,2025-12-08
+S0182,Nour ElShafei,0,Female,Zagazig,nour.elshafei.s0182@kayfa-student.io,G02,2025-12-10
+S0183,Esraa Hassan,30,Female,Port Said,esraa.hassan.s0183@kayfa-student.io,G02,2025-12-14
+S0184,Menna ElBaz,21,Female,Ismailia,menna.elbaz.s0184@kayfa-student.io,G04,2025-12-13
+S0185,Mahmoud Mansour,27,Male,Giza,mahmoud.mansour.s0185@kayfa-student.io,G02,2025-12-03
+S0186,Ziad Saad,24,Male,Fayoum,ziad.saad.s0186@kayfa-student.io,G02,2025-12-05
+S0187,Ziad Soliman,20,Male,Ismailia,ziad.soliman.s0187@kayfa-student.io,G06,2025-12-14
+S0188,Sara Gamal,21,Female,Zagazig,sara.gamal.s0188@kayfa-student.io,G02,2025-12-17
+S0189,Mariam Nasr,19,Female,Giza,mariam.nasr.s0189@kayfa-student.io,G04,2025-12-09
+S0190,Rana Ibrahim,18,Female,Tanta,rana.ibrahim.s0190@kayfa-student.io,G06,2025-12-11
+S0191,Menna Mahmoud,0,Female,Port Said,menna.mahmoud.s0191@kayfa-student.io,G04,2025-12-20
+S0192,Hana Ramadan,19,Female,Port Said,hana.ramadan.s0192@kayfa-student.io,G01,2025-12-02
+S0193,Seif Fathy,19,Male,Mansoura,seif.fathy.s0193@kayfa-student.io,G04,2025-12-02
+S0194,Fady Hassan,22,Male,Alexandria,fady.hassan.s0194@kayfa-student.io,G06,2025-12-16
+S0195,Amr Abdelaziz,24,Male,Alexandria,amr.abdelaziz.s0195@kayfa-student.io,G03,2025-12-11
+S0196,Mariam ElShafei,24,Female,Cairo,mariam.elshafei.s0196@kayfa-student.io,G01,2025-12-08
+S0197,Hassan Sultan,20,Male,Asyut,hassan.sultan.s0197@kayfa-student.io,G03,2025-12-06
+S0198,Esraa ElMasry,21,Female,Asyut,esraa.elmasry.s0198@kayfa-student.io,G02,2025-12-15
+S0199,Adel Darwish,28,Male,Asyut,adel.darwish.s0199@kayfa-student.io,G02,2025-12-10
+S0200,Mohamed Ibrahim,24,Male,Ismailia,mohamed.ibrahim.s0200@kayfa-student.io,G05,2025-12-10
+S0201,Rowan ElBaz,22,Female,Giza,rowan.elbaz.s0201@kayfa-student.io,G07,2025-12-14
+S0202,Ali Mahmoud,21,Male,Tanta,ali.mahmoud.s0202@kayfa-student.io,G02,2025-12-07
+S0203,Mona Darwish,22,Female,Fayoum,mona.darwish.s0203@kayfa-student.io,G09,2025-12-15
+S0204,Karim Awad,0,Male,Asyut,karim.awad.s0204@kayfa-student.io,G09,2025-12-13
+S0205,Adel Soliman,27,Male,Fayoum,adel.soliman.s0205@kayfa-student.io,G04,2025-12-09
+S0206,Karim Shawky,22,Male,Zagazig,karim.shawky.s0206@kayfa-student.io,G07,2025-12-09
+S0207,Ali Halim,25,Male,Giza,ali.halim.s0207@kayfa-student.io,G05,2025-12-08
+S0208,Khaled Soliman,0,Male,Zagazig,khaled.soliman.s0208@kayfa-student.io,G02,2025-12-17
+S0209,Marwan Naguib,0,Male,Giza,marwan.naguib.s0209@kayfa-student.io,G03,2025-12-12
+S0210,Nada Nasr,18,Female,Tanta,nada.nasr.s0210@kayfa-student.io,G07,2025-12-08
+S0211,Abdelrahman Zaki,18,Male,Alexandria,abdelrahman.zaki.s0211@kayfa-student.io,G05,2025-12-08
+S0212,Karim ElGhandour,22,Male,Giza,karim.elghandour.s0212@kayfa-student.io,G08,2025-12-05
+S0213,Nada Nasr,25,Female,Port Said,nada.nasr.s0213@kayfa-student.io,G05,2025-12-12
+S0214,Salma ElBaz,22,Female,Zagazig,salma.elbaz.s0214@kayfa-student.io,G05,2025-12-01
+S0215,Ali ElShafei,0,Male,Giza,ali.elshafei.s0215@kayfa-student.io,G06,2025-12-01
+S0216,Mohamed Mahmoud,18,Male,Ismailia,mohamed.mahmoud.s0216@kayfa-student.io,G03,2025-12-15
+S0217,Tarek ElGhandour,22,Male,Zagazig,tarek.elghandour.s0217@kayfa-student.io,G07,2025-12-10
+S0218,Ali ElSayed,0,Male,Giza,ali.elsayed.s0218@kayfa-student.io,G02,2025-12-18
+S0219,Nada Farouk,22,Female,Ismailia,nada.farouk.s0219@kayfa-student.io,G05,2025-12-09
+S0220,Malak Abdelaziz,21,Female,Ismailia,malak.abdelaziz.s0220@kayfa-student.io,G05,2025-12-05
+S0221,Marwan Farouk,19,Male,Cairo,marwan.farouk.s0221@kayfa-student.io,G02,2025-12-06
+S0222,Fady Ibrahim,20,Male,Mansoura,fady.ibrahim.s0222@kayfa-student.io,G04,2025-12-08
+S0223,Hassan Kamel,0,Male,Tanta,hassan.kamel.s0223@kayfa-student.io,G05,2025-12-19
+S0224,Rowan Sultan,21,Female,Alexandria,rowan.sultan.s0224@kayfa-student.io,G06,2025-12-03
+S0225,Adel Zaki,19,Male,Giza,adel.zaki.s0225@kayfa-student.io,G03,2025-12-08
+S0226,Mahmoud Soliman,19,Male,Fayoum,mahmoud.soliman.s0226@kayfa-student.io,G07,2025-12-18
+S0227,Abdelrahman Soliman,19,Male,Ismailia,abdelrahman.soliman.s0227@kayfa-student.io,G02,2025-12-18
+S0228,Mohamed Shawky,23,Male,Port Said,mohamed.shawky.s0228@kayfa-student.io,G05,2025-12-03
+S0229,Aya Mahmoud,18,Female,Giza,aya.mahmoud.s0229@kayfa-student.io,G08,2025-12-17
+S0230,Dina Zaki,26,Female,Ismailia,dina.zaki.s0230@kayfa-student.io,G04,2025-12-09
+S0231,Adel Shawky,19,Male,Giza,adel.shawky.s0231@kayfa-student.io,G05,2025-12-15
+S0232,Jana Zaki,20,Female,Zagazig,jana.zaki.s0232@kayfa-student.io,G09,2025-12-13
+S0233,Ali Ramadan,21,Male,Alexandria,ali.ramadan.s0233@kayfa-student.io,G06,2025-12-15
+S0234,Fady Saad,22,Male,Alexandria,fady.saad.s0234@kayfa-student.io,G05,2025-12-04
+S0235,Abdelrahman Kamel,0,Male,Port Said,abdelrahman.kamel.s0235@kayfa-student.io,G08,2025-12-10
+S0236,Yasmin Saad,25,Female,Giza,yasmin.saad.s0236@kayfa-student.io,G06,2025-12-18
+S0237,Farida Awad,22,Female,Port Said,farida.awad.s0237@kayfa-student.io,G08,2025-12-09
+S0238,Omar Mansour,0,Male,Fayoum,omar.mansour.s0238@kayfa-student.io,G01,2025-12-08
+S0239,Habiba Mahmoud,0,Female,Port Said,habiba.mahmoud.s0239@kayfa-student.io,G01,2025-12-02
+S0240,Marwan Naguib,21,Male,Fayoum,marwan.naguib.s0240@kayfa-student.io,G09,2025-12-08
+S0241,Esraa Zaki,23,Female,Cairo,esraa.zaki.s0241@kayfa-student.io,G04,2025-12-07
+S0242,Hana ElBaz,23,Female,Asyut,hana.elbaz.s0242@kayfa-student.io,G08,2025-12-03
+S0243,Laila ElMasry,25,Female,Zagazig,laila.elmasry.s0243@kayfa-student.io,G03,2025-12-01
+S0244,Mona Soliman,22,Female,Port Said,mona.soliman.s0244@kayfa-student.io,G06,2025-12-19
+S0245,Hana Mahmoud,19,Female,Giza,hana.mahmoud.s0245@kayfa-student.io,G01,2025-12-16
+S0246,Habiba Gamal,22,Female,Zagazig,habiba.gamal.s0246@kayfa-student.io,G09,2025-12-14
+S0247,Ali ElGhandour,22,Male,Ismailia,ali.elghandour.s0247@kayfa-student.io,G02,2025-12-12
+S0248,Khaled Mansour,22,Male,Zagazig,khaled.mansour.s0248@kayfa-student.io,G03,2025-12-12
+S0249,Jana Mahmoud,22,Female,Asyut,jana.mahmoud.s0249@kayfa-student.io,G03,2025-12-14
+S0250,Farida ElSayed,25,Female,Zagazig,farida.elsayed.s0250@kayfa-student.io,G06,2025-12-01
+S0251,Hassan Saad,23,Male,Tanta,hassan.saad.s0251@kayfa-student.io,G08,2025-12-04
+S0252,Ziad Habib,19,Male,Zagazig,ziad.habib.s0252@kayfa-student.io,G02,2025-12-11
+S0253,Ali ElSayed,22,Male,Port Said,ali.elsayed.s0253@kayfa-student.io,G03,2025-12-12
+S0254,Mahmoud Soliman,20,Male,Mansoura,mahmoud.soliman.s0254@kayfa-student.io,G03,2025-12-15
+S0255,Laila Ramadan,23,Female,Tanta,laila.ramadan.s0255@kayfa-student.io,G08,2025-12-13
+S0256,Hossam ElGhandour,21,Male,Fayoum,hossam.elghandour.s0256@kayfa-student.io,G08,2025-12-19
+S0257,Malak Zaki,21,Female,Alexandria,malak.zaki.s0257@kayfa-student.io,G05,2025-12-16
+S0258,Hassan Nasr,21,Male,Cairo,hassan.nasr.s0258@kayfa-student.io,G04,2025-12-17
+S0259,Seif Abdelaziz,24,Male,Tanta,seif.abdelaziz.s0259@kayfa-student.io,G08,2025-12-18
+S0260,Salma ElMasry,0,Female,Ismailia,salma.elmasry.s0260@kayfa-student.io,G02,2025-12-16
+S0261,Adel Habib,21,Male,Zagazig,adel.habib.s0261@kayfa-student.io,G02,2025-12-19
+S0262,Dina Zaki,22,Female,Mansoura,dina.zaki.s0262@kayfa-student.io,G01,2025-12-09
+S0263,Aya Ramadan,23,Female,Zagazig,aya.ramadan.s0263@kayfa-student.io,G07,2025-12-20
+S0264,Hana Awad,0,Female,Alexandria,hana.awad.s0264@kayfa-student.io,G02,2025-12-17
+S0265,Esraa ElBaz,22,Female,Fayoum,esraa.elbaz.s0265@kayfa-student.io,G01,2025-12-06
+S0266,Khaled Hassan,21,Male,Mansoura,khaled.hassan.s0266@kayfa-student.io,G08,2025-12-13
+S0267,Fady Zaki,23,Male,Giza,fady.zaki.s0267@kayfa-student.io,G03,2025-12-11
+S0268,Mostafa Ibrahim,22,Male,Ismailia,mostafa.ibrahim.s0268@kayfa-student.io,G05,2025-12-05
+S0269,Rowan Darwish,0,Female,Asyut,rowan.darwish.s0269@kayfa-student.io,G08,2025-12-02
+S0270,Habiba Soliman,19,Female,Port Said,habiba.soliman.s0270@kayfa-student.io,G04,2025-12-15
+S0271,Sara ElSayed,21,Female,Asyut,sara.elsayed.s0271@kayfa-student.io,G06,2025-12-05
+S0272,Jana Naguib,24,Female,Ismailia,jana.naguib.s0272@kayfa-student.io,G06,2025-12-02
+S0273,Mona ElGhandour,22,Female,Cairo,mona.elghandour.s0273@kayfa-student.io,G08,2025-12-01
+S0274,Rana Ramadan,28,Female,Port Said,rana.ramadan.s0274@kayfa-student.io,G06,2025-12-16
+S0275,Rana Naguib,0,Female,Alexandria,rana.naguib.s0275@kayfa-student.io,G06,2025-12-03
+S0276,Esraa Refaat,24,Female,Alexandria,esraa.refaat.s0276@kayfa-student.io,G08,2025-12-20
+S0277,Menna Ibrahim,0,Female,Mansoura,menna.ibrahim.s0277@kayfa-student.io,G02,2025-12-15
+S0278,Mahmoud Shawky,26,Male,Asyut,mahmoud.shawky.s0278@kayfa-student.io,G01,2025-12-16
+S0279,Ziad Farouk,23,Male,Cairo,ziad.farouk.s0279@kayfa-student.io,G07,2025-12-20
+S0280,Youssef Nasr,23,Male,Tanta,youssef.nasr.s0280@kayfa-student.io,G04,2025-12-06
+S0281,Nada AbdelHamid,22,Female,Ismailia,nada.abdelhamid.s0281@kayfa-student.io,G02,2025-12-16
+S0282,Rowan ElBaz,25,Female,Zagazig,rowan.elbaz.s0282@kayfa-student.io,G06,2025-12-20
+S0283,Khaled Sultan,21,Male,Giza,khaled.sultan.s0283@kayfa-student.io,G09,2025-12-06
+S0284,Amr Naguib,23,Male,Zagazig,amr.naguib.s0284@kayfa-student.io,G07,2025-12-13
+S0285,Habiba Mansour,23,Female,Port Said,habiba.mansour.s0285@kayfa-student.io,G02,2025-12-02
+S0286,Laila ElGhandour,18,Female,Cairo,laila.elghandour.s0286@kayfa-student.io,G07,2025-12-04
+S0287,Nada Gamal,20,Female,Giza,nada.gamal.s0287@kayfa-student.io,G06,2025-12-13
+S0288,Tarek Hassan,18,Male,Port Said,tarek.hassan.s0288@kayfa-student.io,G07,2025-12-08
+S0289,Omar Ramadan,25,Male,Zagazig,omar.ramadan.s0289@kayfa-student.io,G08,2025-12-01
+S0290,Mahmoud Darwish,0,Male,Fayoum,mahmoud.darwish.s0290@kayfa-student.io,G07,2025-12-19
+S0291,Omar ElShafei,0,Male,Asyut,omar.elshafei.s0291@kayfa-student.io,G06,2025-12-08
+S0292,Salma Ramadan,0,Female,Cairo,salma.ramadan.s0292@kayfa-student.io,G06,2025-12-08
+S0293,Mona Naguib,0,Female,Tanta,mona.naguib.s0293@kayfa-student.io,G03,2025-12-10
+S0294,Sherif Darwish,0,Male,Fayoum,sherif.darwish.s0294@kayfa-student.io,G05,2025-12-15
+S0295,Omar ElMasry,0,Male,Fayoum,omar.elmasry.s0295@kayfa-student.io,G04,2025-12-03
+S0296,Yasmin Halim,21,Female,Giza,yasmin.halim.s0296@kayfa-student.io,G02,2025-12-17
+S0297,Farida Nasr,20,Female,Alexandria,farida.nasr.s0297@kayfa-student.io,G09,2025-12-11
+S0298,Mostafa Fathy,18,Male,Mansoura,mostafa.fathy.s0298@kayfa-student.io,G06,2025-12-11
+S0299,Seif ElShafei,23,Male,Fayoum,seif.elshafei.s0299@kayfa-student.io,G08,2025-12-01
+S0300,Khaled Mahmoud,27,Male,Ismailia,khaled.mahmoud.s0300@kayfa-student.io,G09,2025-12-03
+S0301,Sara Habib,21,Female,Alexandria,sara.habib.s0301@kayfa-student.io,G08,2025-12-11
+S0302,Laila ElMasry,22,Female,Alexandria,laila.elmasry.s0302@kayfa-student.io,G06,2025-12-13
+S0303,Amr Kamel,20,Male,Ismailia,amr.kamel.s0303@kayfa-student.io,G09,2025-12-13
+S0304,Youssef Habib,18,Male,Asyut,youssef.habib.s0304@kayfa-student.io,G09,2025-12-19
+S0305,Tarek Shawky,0,Male,Zagazig,tarek.shawky.s0305@kayfa-student.io,G03,2025-12-07
+S0306,Khaled Gamal,0,Male,Asyut,khaled.gamal.s0306@kayfa-student.io,G09,2025-12-18
+S0307,Farida Darwish,23,Female,Asyut,farida.darwish.s0307@kayfa-student.io,G05,2025-12-03
+S0308,Marwan Saad,24,Male,Port Said,marwan.saad.s0308@kayfa-student.io,G03,2025-12-12
+S0309,Abdelrahman Ibrahim,30,Male,Giza,abdelrahman.ibrahim.s0309@kayfa-student.io,G06,2025-12-17
+S0310,Abdelrahman Gamal,23,Male,Port Said,abdelrahman.gamal.s0310@kayfa-student.io,G01,2025-12-19
+S0311,Mohamed Farouk,23,Male,Tanta,mohamed.farouk.s0311@kayfa-student.io,G07,2025-12-13
+S0312,Dina Mansour,19,Female,Giza,dina.mansour.s0312@kayfa-student.io,G08,2025-12-05
+S0313,Sara Farouk,31,Female,Mansoura,sara.farouk.s0313@kayfa-student.io,G01,2025-12-04
+S0314,Yasmin Nasr,22,Female,Zagazig,yasmin.nasr.s0314@kayfa-student.io,G06,2025-12-13
+S0315,Aya Zaki,19,Female,Zagazig,aya.zaki.s0315@kayfa-student.io,G07,2025-12-03
+S0316,Salma ElMasry,20,Female,Alexandria,salma.elmasry.s0316@kayfa-student.io,G04,2025-12-10
+S0317,Mona Nasr,19,Female,Mansoura,mona.nasr.s0317@kayfa-student.io,G02,2025-12-02
+S0318,Abdelrahman Sultan,29,Male,Mansoura,abdelrahman.sultan.s0318@kayfa-student.io,G03,2025-12-17
+S0319,Malak ElMasry,22,Female,Tanta,malak.elmasry.s0319@kayfa-student.io,G03,2025-12-10
+S0320,Dina Zaki,21,Female,Mansoura,dina.zaki.s0320@kayfa-student.io,G08,2025-12-01
+S0321,Youssef Ibrahim,28,Male,Fayoum,youssef.ibrahim.s0321@kayfa-student.io,G04,2025-12-12
+S0322,Ahmed Nasr,21,Male,Ismailia,ahmed.nasr.s0322@kayfa-student.io,G08,2025-12-06
+S0323,Aya Kamel,22,Female,Zagazig,aya.kamel.s0323@kayfa-student.io,G10,2025-12-18
+S0324,Abdelrahman Naguib,24,Male,Zagazig,abdelrahman.naguib.s0324@kayfa-student.io,G01,2025-12-09
+S0325,Mona Zaki,23,Female,Asyut,mona.zaki.s0325@kayfa-student.io,G09,2025-12-06
+S0326,Mostafa Saad,20,Male,Ismailia,mostafa.saad.s0326@kayfa-student.io,G05,2025-12-17
+S0327,Hana Naguib,18,Female,Alexandria,hana.naguib.s0327@kayfa-student.io,G06,2025-12-16
+S0328,Dina Zaki,24,Female,Cairo,dina.zaki.s0328@kayfa-student.io,G04,2025-12-13
+S0329,Hana Awad,22,Female,Asyut,hana.awad.s0329@kayfa-student.io,G01,2025-12-03
+S0330,Malak Saad,22,Female,Port Said,malak.saad.s0330@kayfa-student.io,G08,2025-12-03
+S0331,Farida ElShafei,20,Female,Asyut,farida.elshafei.s0331@kayfa-student.io,G06,2025-12-04
+S0332,Abdelrahman Mansour,23,Male,Cairo,abdelrahman.mansour.s0332@kayfa-student.io,G09,2025-12-11
+S0333,Mostafa Soliman,23,Male,Cairo,mostafa.soliman.s0333@kayfa-student.io,G06,2025-12-07
+S0334,Marwan ElShafei,0,Male,Cairo,marwan.elshafei.s0334@kayfa-student.io,G08,2025-12-06
+S0335,Mona Saad,20,Female,Cairo,mona.saad.s0335@kayfa-student.io,G08,2025-12-04
+S0336,Laila Shawky,18,Female,Alexandria,laila.shawky.s0336@kayfa-student.io,G02,2025-12-04
+S0337,Sara Zaki,21,Female,Cairo,sara.zaki.s0337@kayfa-student.io,G07,2025-12-14
+S0338,Seif Shawky,0,Male,Asyut,seif.shawky.s0338@kayfa-student.io,G03,2025-12-11
+S0339,Amr ElMasry,23,Male,Asyut,amr.elmasry.s0339@kayfa-student.io,G07,2025-12-07
+S0340,Nour Darwish,20,Female,Mansoura,nour.darwish.s0340@kayfa-student.io,G06,2025-12-14
+S0341,Farida Ramadan,23,Female,Tanta,farida.ramadan.s0341@kayfa-student.io,G04,2025-12-06
+S0342,Rowan Shawky,0,Female,Zagazig,rowan.shawky.s0342@kayfa-student.io,G04,2025-12-14
+S0343,Salma Mansour,0,Female,Port Said,salma.mansour.s0343@kayfa-student.io,G09,2025-12-19
+S0344,Dina Habib,25,Female,Alexandria,dina.habib.s0344@kayfa-student.io,G09,2025-12-08
+S0345,Khaled ElGhandour,23,Male,Tanta,khaled.elghandour.s0345@kayfa-student.io,G05,2025-12-01
+S0346,Ziad Gamal,19,Male,Alexandria,ziad.gamal.s0346@kayfa-student.io,G08,2025-12-05
+S0347,Marwan Ramadan,19,Male,Cairo,marwan.ramadan.s0347@kayfa-student.io,G02,2025-12-13
+S0348,Adel Ibrahim,19,Male,Ismailia,adel.ibrahim.s0348@kayfa-student.io,G09,2025-12-05
+S0349,Karim Halim,0,Male,Cairo,karim.halim.s0349@kayfa-student.io,G06,2025-12-15
+S0350,Tarek Soliman,19,Male,Fayoum,tarek.soliman.s0350@kayfa-student.io,G09,2025-12-20
+S0351,Habiba Shawky,20,Female,Cairo,habiba.shawky.s0351@kayfa-student.io,G04,2025-12-16
+S0352,Adel Naguib,25,Male,Alexandria,adel.naguib.s0352@kayfa-student.io,G02,2025-12-14
+S0353,Amr Ibrahim,20,Male,Fayoum,amr.ibrahim.s0353@kayfa-student.io,G07,2025-12-18
+S0354,Habiba Ibrahim,19,Female,Tanta,habiba.ibrahim.s0354@kayfa-student.io,G03,2025-12-19
+S0355,Hana Mansour,22,Female,Asyut,hana.mansour.s0355@kayfa-student.io,G02,2025-12-19
+S0356,Hassan Nasr,22,Male,Tanta,hassan.nasr.s0356@kayfa-student.io,G09,2025-12-10
+S0357,Hana ElSayed,25,Female,Tanta,hana.elsayed.s0357@kayfa-student.io,G04,2025-12-17
+S0358,Hana Awad,0,Female,Port Said,hana.awad.s0358@kayfa-student.io,G03,2025-12-01
+S0359,Dina Habib,22,Female,Asyut,dina.habib.s0359@kayfa-student.io,G04,2025-12-04
+S0360,Karim ElSayed,22,Male,Fayoum,karim.elsayed.s0360@kayfa-student.io,G06,2025-12-02
+S0361,Ahmed Gamal,20,Male,Mansoura,ahmed.gamal.s0361@kayfa-student.io,G06,2025-12-19
+S0362,Hana Mansour,0,Female,Tanta,hana.mansour.s0362@kayfa-student.io,G08,2025-12-16
+S0363,Youssef Halim,24,Male,Fayoum,youssef.halim.s0363@kayfa-student.io,G06,2025-12-14
+S0364,Malak ElBaz,21,Female,Giza,malak.elbaz.s0364@kayfa-student.io,G05,2025-12-04
+S0365,Adel Ramadan,23,Male,Fayoum,adel.ramadan.s0365@kayfa-student.io,G05,2025-12-08
+S0366,Fady Elghandour,20,Male,Asyut,fady.elghandour.s0366@kayfa-student.io,G03,2025-12-10
+S0367,Sherif Kamel,0,Male,Port Said,sherif.kamel.s0367@kayfa-student.io,G08,2025-12-16
+S0368,Jana ElBaz,21,Female,Giza,jana.elbaz.s0368@kayfa-student.io,G02,2025-12-11
+S0369,Seif Zaki,22,Male,Port Said,seif.zaki.s0369@kayfa-student.io,G02,2025-12-02
+S0370,Yasmin Nasr,22,Female,Giza,yasmin.nasr.s0370@kayfa-student.io,G09,2025-12-03
+S0371,Rowan Mahmoud,24,Female,Cairo,rowan.mahmoud.s0371@kayfa-student.io,G04,2025-12-15
+S0372,Sara ElMasry,20,Female,Asyut,sara.elmasry.s0372@kayfa-student.io,G08,2025-12-03
+S0373,Farida Sultan,21,Female,Ismailia,farida.sultan.s0373@kayfa-student.io,G08,2025-12-14
+S0374,Sherif ElShafei,21,Male,Cairo,sherif.elshafei.s0374@kayfa-student.io,G05,2025-12-17
+S0375,Omar Naguib,24,Male,Giza,omar.naguib.s0375@kayfa-student.io,G07,2025-12-07
+S0376,Sara ElSayed,21,Female,Ismailia,sara.elsayed.s0376@kayfa-student.io,G08,2025-12-01
+S0377,Mona ElMasry,21,Female,Ismailia,mona.elmasry.s0377@kayfa-student.io,G06,2025-12-20
+S0378,Ziad Saad,20,Male,Giza,ziad.saad.s0378@kayfa-student.io,G02,2025-12-14
+S0379,Dina Zaki,0,Female,Mansoura,dina.zaki.s0379@kayfa-student.io,G03,2025-12-20
+S0380,Farida ElMasry,21,Female,Asyut,farida.elmasry.s0380@kayfa-student.io,G01,2025-12-16
+S0381,Mariam ElMasry,0,Female,Alexandria,mariam.elmasry.s0381@kayfa-student.io,G07,2025-12-17
+S0382,Mostafa Ibrahim,20,Male,Port Said,mostafa.ibrahim.s0382@kayfa-student.io,G05,2025-12-04
+S0383,Omar Abdelaziz,21,Male,Fayoum,omar.abdelaziz.s0383@kayfa-student.io,G01,2025-12-05
+S0384,Mahmoud AbdelHamid,19,Male,Mansoura,mahmoud.abdelhamid.s0384@kayfa-student.io,G01,2025-12-05
+S0385,Youssef Saad,19,Male,Mansoura,youssef.saad.s0385@kayfa-student.io,G09,2025-12-05
+S0386,Yasmin Ramadan,18,Female,Alexandria,yasmin.ramadan.s0386@kayfa-student.io,G06,2025-12-12
+S0387,Farida Gamal,25,Female,Asyut,farida.gamal.s0387@kayfa-student.io,G09,2025-12-05
+S0388,Nada Naguib,18,Female,Cairo,nada.naguib.s0388@kayfa-student.io,G03,2025-12-13
+S0389,Mona Awad,24,Female,Ismailia,mona.awad.s0389@kayfa-student.io,G06,2025-12-19
+S0390,Mona ElSayed,19,Female,Mansoura,mona.elsayed.s0390@kayfa-student.io,G07,2025-12-03
+S0391,Ali Awad,0,Male,Cairo,ali.awad.s0391@kayfa-student.io,G04,2025-12-07
+S0392,Sara Naguib,24,Female,Ismailia,sara.naguib.s0392@kayfa-student.io,G09,2025-12-09
+S0393,Hana Refaat,20,Female,Fayoum,hana.refaat.s0393@kayfa-student.io,G04,2025-12-06
+S0394,Hossam Ibrahim,0,Male,Ismailia,hossam.ibrahim.s0394@kayfa-student.io,G06,2025-12-02
+S0395,Hossam Awad,0,Male,Fayoum,hossam.awad.s0395@kayfa-student.io,G01,2025-12-18
+S0396,Hana Mansour,22,Female,Mansoura,hana.mansour.s0396@kayfa-student.io,G04,2025-12-18
+S0397,Mostafa Sultan,21,Male,Mansoura,mostafa.sultan.s0397@kayfa-student.io,G04,2025-12-20
+S0398,Mariam Naguib,23,Female,Tanta,mariam.naguib.s0398@kayfa-student.io,G04,2025-12-08
+S0399,Rana Mansour,26,Female,Zagazig,rana.mansour.s0399@kayfa-student.io,G07,2025-12-10
+S0400,Menna Abdelaziz,0,Female,Zagazig,menna.abdelaziz.s0400@kayfa-student.io,G09,2025-12-18
+S0401,Sara Ibrahim,23,Female,Alexandria,sara.ibrahim.s0401@kayfa-student.io,G04,2025-12-08
+S0402,Marwan ElShafei,28,Male,Tanta,marwan.elshafei.s0402@kayfa-student.io,G01,2025-12-06
+S0403,Adel AbdelHamid,23,Male,Fayoum,adel.abdelhamid.s0403@kayfa-student.io,G03,2025-12-04
+S0404,Hana Gamal,30,Female,Fayoum,hana.gamal.s0404@kayfa-student.io,G09,2025-12-14
+S0405,Rana ElSayed,23,Female,Asyut,rana.elsayed.s0405@kayfa-student.io,G08,2025-12-04
+S0406,Ziad Refaat,19,Male,Asyut,ziad.refaat.s0406@kayfa-student.io,G08,2025-12-04
+S0407,Omar Habib,21,Male,Cairo,omar.habib.s0407@kayfa-student.io,G01,2025-12-17
+S0408,Adel Mahmoud,0,Male,Cairo,adel.mahmoud.s0408@kayfa-student.io,G07,2025-12-03
+S0409,Aya Ibrahim,21,Female,Fayoum,aya.ibrahim.s0409@kayfa-student.io,G04,2025-12-11
+S0410,Seif Soliman,21,Male,Cairo,seif.soliman.s0410@kayfa-student.io,G01,2025-12-01
+S0411,Ziad Mansour,22,Male,Asyut,ziad.mansour.s0411@kayfa-student.io,G09,2025-12-15
+S0412,Amr Abdelaziz,19,Male,Asyut,amr.abdelaziz.s0412@kayfa-student.io,G07,2025-12-17
+S0413,Jana Gamal,20,Female,Tanta,jana.gamal.s0413@kayfa-student.io,G03,2025-12-05
+S0414,Dina ElMasry,19,Female,Mansoura,dina.elmasry.s0414@kayfa-student.io,G07,2025-12-02
+S0415,Khaled Refaat,20,Male,Giza,khaled.refaat.s0415@kayfa-student.io,G05,2025-12-14
+S0416,Seif Farouk,31,Male,Cairo,seif.farouk.s0416@kayfa-student.io,G07,2025-12-08
+S0417,Nada Refaat,20,Female,Port Said,nada.refaat.s0417@kayfa-student.io,G03,2025-12-02
+S0418,Mahmoud Ramadan,23,Male,Port Said,mahmoud.ramadan.s0418@kayfa-student.io,G02,2025-12-18
+S0419,Omar Halim,26,Male,Asyut,omar.halim.s0419@kayfa-student.io,G08,2025-12-06
+S0420,Yasmin Hassan,26,Female,Port Said,yasmin.hassan.s0420@kayfa-student.io,G01,2025-12-04
+S0421,Dina Mahmoud,20,Female,Alexandria,dina.mahmoud.s0421@kayfa-student.io,G03,2025-12-16
+S0422,Mona Halim,19,Female,Ismailia,mona.halim.s0422@kayfa-student.io,G04,2025-12-12
+S0423,Khaled Zaki,0,Male,Cairo,khaled.zaki.s0423@kayfa-student.io,G03,2025-12-16
+S0424,Omar Shawky,23,Male,Zagazig,omar.shawky.s0424@kayfa-student.io,G02,2025-12-09
+S0425,Laila Farouk,26,Female,Zagazig,laila.farouk.s0425@kayfa-student.io,G01,2025-12-13
+S0426,Nada ElSayed,0,Female,Giza,nada.elsayed.s0426@kayfa-student.io,G09,2025-12-19
+S0427,Omar Mahmoud,21,Male,Alexandria,omar.mahmoud.s0427@kayfa-student.io,G05,2025-12-16
+S0428,Ali Sultan,19,Male,Zagazig,ali.sultan.s0428@kayfa-student.io,G07,2025-12-15
+S0429,Ahmed Mansour,23,Male,Zagazig,ahmed.mansour.s0429@kayfa-student.io,G06,2025-12-03
+S0430,Khaled ElSayed,0,Male,Fayoum,khaled.elsayed.s0430@kayfa-student.io,G05,2025-12-03
+S0431,Sara Abdelaziz,24,Female,Giza,sara.abdelaziz.s0431@kayfa-student.io,G09,2025-12-12
+S0432,Fady Darwish,28,Male,Ismailia,fady.darwish.s0432@kayfa-student.io,G06,2025-12-12
+S0433,Mona Kamel,0,Female,Asyut,mona.kamel.s0433@kayfa-student.io,G01,2025-12-06
+S0434,Tarek Halim,21,Male,Alexandria,tarek.halim.s0434@kayfa-student.io,G04,2025-12-12
+S0435,Salma Farouk,20,Female,Giza,salma.farouk.s0435@kayfa-student.io,G03,2025-12-06
+S0436,Sara Mansour,19,Female,Giza,sara.mansour.s0436@kayfa-student.io,G03,2025-12-09
+S0437,Mariam Sultan,26,Female,Port Said,mariam.sultan.s0437@kayfa-student.io,G06,2025-12-06
+S0438,Hassan Mansour,25,Male,Ismailia,hassan.mansour.s0438@kayfa-student.io,G04,2025-12-10
+S0439,Mona Awad,21,Female,Fayoum,mona.awad.s0439@kayfa-student.io,G06,2025-12-17
+S0440,Fady Saad,19,Male,Zagazig,fady.saad.s0440@kayfa-student.io,G06,2025-12-09
+S0441,Amr AbdelHamid,24,Male,Tanta,amr.abdelhamid.s0441@kayfa-student.io,G04,2025-12-10
+S0442,Mariam Shawky,19,Female,Tanta,mariam.shawky.s0442@kayfa-student.io,G08,2025-12-20
+S0443,Abdelrahman Fathy,19,Male,Asyut,abdelrahman.fathy.s0443@kayfa-student.io,G07,2025-12-08
+S0444,Menna ElBaz,20,Female,Fayoum,menna.elbaz.s0444@kayfa-student.io,G01,2025-12-20
+S0445,Omar Habib,23,Male,Fayoum,omar.habib.s0445@kayfa-student.io,G05,2025-12-17
+S0446,Mariam Gamal,25,Female,Ismailia,mariam.gamal.s0446@kayfa-student.io,G03,2025-12-13
+S0447,Fady Farouk,23,Male,Asyut,fady.farouk.s0447@kayfa-student.io,G07,2025-12-02
+S0448,Sara Naguib,21,Female,Zagazig,sara.naguib.s0448@kayfa-student.io,G09,2025-12-19
+S0449,Khaled Abdelaziz,19,Male,Zagazig,khaled.abdelaziz.s0449@kayfa-student.io,G09,2025-12-12
+S0450,Mahmoud ElShafei,18,Male,Zagazig,mahmoud.elshafei.s0450@kayfa-student.io,G03,2025-12-13
+S0451,Karim Gamal,27,Male,Asyut,karim.gamal.s0451@kayfa-student.io,G07,2025-12-03
+S0452,Abdelrahman Ramadan,0,Male,Zagazig,abdelrahman.ramadan.s0452@kayfa-student.io,G09,2025-12-12
+S0453,Marwan ElBaz,0,Male,Zagazig,marwan.elbaz.s0453@kayfa-student.io,G07,2025-12-10
+S0454,Habiba Soliman,0,Female,Giza,habiba.soliman.s0454@kayfa-student.io,G01,2025-12-10
+S0455,Hana ElMasry,21,Female,Asyut,hana.elmasry.s0455@kayfa-student.io,G03,2025-12-07
+S0456,Karim ElMasry,22,Male,Zagazig,karim.elmasry.s0456@kayfa-student.io,G08,2025-12-07
+S0457,Mostafa Hassan,0,Male,Giza,mostafa.hassan.s0457@kayfa-student.io,G02,2025-12-07
+S0458,Mariam Zaki,21,Female,Asyut,mariam.zaki.s0458@kayfa-student.io,G03,2025-12-19
+S0459,Nada ElMasry,22,Female,Ismailia,nada.elmasry.s0459@kayfa-student.io,G03,2025-12-07
+S0460,Nada AbdelHamid,18,Female,Port Said,nada.abdelhamid.s0460@kayfa-student.io,G03,2025-12-04
+S0461,Nada AbdelHamid,21,Female,Mansoura,nada.abdelhamid.s0461@kayfa-student.io,G04,2025-12-09
+S0462,Omar ElShafei,23,Male,Asyut,omar.elshafei.s0462@kayfa-student.io,G04,2025-12-06
+S0463,Hossam ElMasry,20,Male,Tanta,hossam.elmasry.s0463@kayfa-student.io,G03,2025-12-08
+S0464,Yasmin Darwish,20,Female,Port Said,yasmin.darwish.s0464@kayfa-student.io,G08,2025-12-11
+S0465,Rana ElGhandour,22,Female,Port Said,rana.elghandour.s0465@kayfa-student.io,G07,2025-12-12
+S0466,Farida Darwish,23,Female,Alexandria,farida.darwish.s0466@kayfa-student.io,G03,2025-12-17
+S0467,Farida Abdelaziz,26,Female,Zagazig,farida.abdelaziz.s0467@kayfa-student.io,G06,2025-12-03
+S0468,Sara Darwish,0,Female,Port Said,sara.darwish.s0468@kayfa-student.io,G03,2025-12-11
+S0469,Rowan Refaat,20,Female,Asyut,rowan.refaat.s0469@kayfa-student.io,G07,2025-12-09
+S0470,Hassan ElSayed,26,Male,Fayoum,hassan.elsayed.s0470@kayfa-student.io,G03,2025-12-10
+S0471,Ahmed Farouk,21,Male,Mansoura,ahmed.farouk.s0471@kayfa-student.io,G01,2025-12-18
+S0472,Malak Refaat,18,Female,Ismailia,malak.refaat.s0472@kayfa-student.io,G07,2025-12-20
+S0473,Laila Farouk,22,Female,Giza,laila.farouk.s0473@kayfa-student.io,G08,2025-12-09
+S0474,Adel Mansour,21,Male,Tanta,adel.mansour.s0474@kayfa-student.io,G01,2025-12-16
+S0475,Tarek Kamel,23,Male,Port Said,tarek.kamel.s0475@kayfa-student.io,G04,2025-12-11
+S0476,Mostafa ElShafei,26,Male,Tanta,mostafa.elshafei.s0476@kayfa-student.io,G08,2025-12-11
+S0477,Aya Naguib,21,Female,Fayoum,aya.naguib.s0477@kayfa-student.io,G09,2025-12-17
+S0478,Nada Abdelaziz,0,Female,Tanta,nada.abdelaziz.s0478@kayfa-student.io,G09,2025-12-05
+S0479,Rana Nasr,23,Female,Fayoum,rana.nasr.s0479@kayfa-student.io,G01,2025-12-09
+S0480,Mariam Fathy,24,Female,Port Said,mariam.fathy.s0480@kayfa-student.io,G02,2025-12-16
+S0481,Hassan Awad,24,Male,Mansoura,hassan.awad.s0481@kayfa-student.io,G07,2025-12-04
+S0482,Ziad Gamal,26,Male,Zagazig,ziad.gamal.s0482@kayfa-student.io,G01,2025-12-12
+S0483,Salma Nasr,19,Female,Alexandria,salma.nasr.s0483@kayfa-student.io,G05,2025-12-06
+S0484,Salma Nasr,24,Female,Alexandria,salma.nasr.s0484@kayfa-student.io,G07,2025-12-19
+S0485,Yasmin Habib,23,Female,Ismailia,yasmin.habib.s0485@kayfa-student.io,G04,2025-12-03
+S0486,Salma Refaat,22,Female,Ismailia,salma.refaat.s0486@kayfa-student.io,G08,2025-12-03
+S0487,Khaled AbdelHamid,18,Male,Zagazig,khaled.abdelhamid.s0487@kayfa-student.io,G08,2025-12-02
+S0488,Yasmin ElShafei,23,Female,Giza,yasmin.elshafei.s0488@kayfa-student.io,G08,2025-12-20
+S0489,Rana Nasr,27,Female,Asyut,rana.nasr.s0489@kayfa-student.io,G08,2025-12-13
+S0490,Nada Habib,21,Female,Fayoum,nada.habib.s0490@kayfa-student.io,G07,2025-12-05
+S0491,Habiba Shawky,21,Female,Port Said,habiba.shawky.s0491@kayfa-student.io,G05,2025-12-07
+S0492,Youssef Ibrahim,28,Male,Fayoum,youssef.ibrahim.s0492@kayfa-student.io,G08,2025-12-16
+S0493,Tarek ElMasry,0,Male,Cairo,tarek.elmasry.s0493@kayfa-student.io,G01,2025-12-03
+S0494,Hassan Refaat,21,Male,Alexandria,hassan.refaat.s0494@kayfa-student.io,G07,2025-12-05
+S0495,Aya Gamal,21,Female,Zagazig,aya.gamal.s0495@kayfa-student.io,G05,2025-12-02
+S0496,Farida Sultan,18,Female,Ismailia,farida.sultan.s0496@kayfa-student.io,G03,2025-12-02
+S0497,Ahmed Fathy,22,Male,Giza,ahmed.fathy.s0497@kayfa-student.io,G02,2025-12-15
+S0498,Jana Halim,0,Female,Cairo,jana.halim.s0498@kayfa-student.io,G03,2025-12-12
+S0499,Mostafa Nasr,0,Male,Alexandria,mostafa.nasr.s0499@kayfa-student.io,G01,2025-12-14
+S0500,Adel AbdelHamid,21,Male,Giza,adel.abdelhamid.s0500@kayfa-student.io,G10,2025-12-10
