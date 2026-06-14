@@ -80,24 +80,55 @@ if not q6.empty:
         "Taught in Week 4, right over the Ramadan attendance dip (Q9). Average time-on-task is 42% below other concepts. 61% of failures come from G07/G10 – the two lowest-attendance groups. The C002 teaching team covers 3 cohorts concurrently with no TA support. Mastery is flat across 3 assessments: 14.0% → 18.8% → 13.7% (Q7). Recommendation: (1) move Recursion to Week 6 post-Ramadan, (2) add 3×45min live coding labs, (3) split instructor load, (4) require 2 auto-graded katas before the summative – target 40% mastery by Assessment 2.")
 
 # Q7 – Recursion Mastery – extra deep dive viz
+# Q7 – Recursion Mastery Deep Dive
 if not q7.empty:
-    st.markdown('<div class="section-card"><div class="section-title">Q7 – Recursion Mastery Deep Dive</div></div>', unsafe_allow_html=True)
-    fig = px.line(q7, x="assessment_id", y="mastery_rate", markers=True,
-        labels={c: human(c) for c in q7.columns})
+    # --- use a real time field if present ---
+    time_col = next((c for c in ["assessment_date","date","timestamp","session_datetime","time","assessment_seq"] if c in q7.columns), None)
+    
+    if time_col:
+        # real time axis
+        q7[time_col] = pd.to_datetime(q7[time_col], errors="ignore")
+        q7 = q7.sort_values(time_col)
+        x_col = time_col
+        hover_name = "assessment_id" if "assessment_id" in q7.columns else None
+        x_title = "Assessment Date"
+    else:
+        # no date in the seed – build a chronological time axis
+        # C002 Recursion timeline: QZ → EX → EXF
+        time_order = {
+            "C002-QZ": 1, "CO02-QZ": 1,
+            "C002-EX": 2, "CO02-EX": 2,
+            "C002-EXF": 3, "CO02-EXF": 3,
+        }
+        q7["time_seq"] = q7["assessment_id"].map(time_order).fillna(99)
+        q7 = q7.sort_values("time_seq")
+        x_col = "time_seq"
+        hover_name = "assessment_id"
+        x_title = "Time →"
+
+    fig = px.line(
+        q7, x=x_col, y="mastery_rate", markers=True,
+        hover_data=[hover_name] if hover_name and hover_name != x_col else None,
+        labels={c: human(c) for c in q7.columns}
+    )
+    
+    # show Assessment IDs as tick labels when using the synthetic time axis
+    if x_col == "time_seq" and "assessment_id" in q7.columns:
+        fig.update_xaxes(
+            tickmode="array",
+            tickvals=q7["time_seq"].tolist(),
+            ticktext=q7["assessment_id"].tolist(),
+            title_text=x_title
+        )
+    else:
+        fig.update_xaxes(title_text=x_title)
+
     fig.add_hline(y=50, line_dash="dash", line_color="#EF4444", annotation_text="Pass threshold 50%")
-    fig = style_fig(fig, "assessment_id", "mastery_rate")
+    fig = style_fig(fig, None, "mastery_rate")
+    # style_fig clears the x title, put it back
+    fig.update_xaxes(title_text=x_title)
+    
     st.plotly_chart(fig, width='stretch', theme=None)
-    insight("Mastery is flat and far below pass: 14.0% → 18.8% → 13.7%. Current teaching is not moving the needle.")
-    rec("Replace the current Recursion unit with spaced practice + live coding labs. Pilot in G04 first – their upward trend playbook works.")
-    # Merge q6 + q1 to show failing concept vs group attendance
-    q1 = pd.DataFrame(find_all("q1_attendance"))
-    if not q1.empty:
-        low_groups = q1[q1["attendance_rate"] < 70][["group_id","attendance_rate"]]
-        low_groups["Concept"] = "Recursion"
-        low_groups["Failure Rate"] = 85.3
-        fig2 = px.bar(low_groups, x="attendance_rate", y="group_id", orientation="h",
-            color="attendance_rate", color_continuous_scale="Reds")
-        fig2 = style_fig(fig2, "attendance_rate", "group_id")
-        st.plotly_chart(fig2, width='stretch', theme=None)
-    explore("Recursion – who fails, why?",
-    "Failure is concentrated in low-attendance cohorts G07 (60.2%) and G10 (65.4%). Video completion during the Recursion weeks drops to 1.9 hrs/week vs 5.4 platform avg. Time-on-task is -42%. No TA support, 1 instructor : 3 cohorts. Fix the calendar, add labs, split load – expected lift +22pp mastery.")
+
+    insight("Mastery is flat and far below pass: 14.0% → 18.8% → 13.7% over time. Current teaching is not moving the needle.")
+    rec("Replace the current Recursion unit with spaced practice + live coding labs, pilot in G04 first.")
