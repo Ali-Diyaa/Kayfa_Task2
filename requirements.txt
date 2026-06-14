@@ -1,5 +1,7 @@
 streamlit
-pymongo
 pandas
-plotly
 numpy
+plotly
+pymongo
+python-dateutil
+statsmodels
