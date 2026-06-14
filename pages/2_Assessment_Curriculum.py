@@ -33,7 +33,7 @@ st.markdown('<div class="section-card"><div class="section-title">Q2 – Score b
 df = pd.DataFrame(q2_dist)
 if not df.empty:
     fig = px.box(df, x="type", y="score_pct", color="type")
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width='stretch')
 st.markdown('</div>', unsafe_allow_html=True)
 st.markdown('<div class="insight-box"><b>Insight:</b> Assignments 65.3%, CV 0.197 – lowest and most volatile.</div>', unsafe_allow_html=True)
 st.markdown('<div class="rec-box"><b>Action:</b> Standardize assignment rubrics, add checkpoint drafts.</div>', unsafe_allow_html=True)
@@ -44,7 +44,7 @@ df = pd.DataFrame(q3_dist)
 if not df.empty:
     fig = px.box(df, x="course_name", y="score_pct")
     fig.update_xaxes(tickangle=-30)
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width='stretch')
 st.markdown('</div>', unsafe_allow_html=True)
 st.markdown('<div class="insight-box"><b>Insight:</b> C007 76.15% high, C005 59.08% low.</div>', unsafe_allow_html=True)
 st.markdown('<div class="rec-box"><b>Action:</b> Audit C005 assessment alignment.</div>', unsafe_allow_html=True)
@@ -54,7 +54,7 @@ st.markdown('<div class="section-card"><div class="section-title">Q6 – Concept
 df = pd.DataFrame(q6)
 if not df.empty:
     fig = px.bar(df.head(12), x="fail_rate", y="concept_name", color="course_name", orientation="h")
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width='stretch')
 st.markdown('</div>', unsafe_allow_html=True)
 st.markdown('<div class="insight-box"><b>Insight:</b> Recursion – C002: 85.33% fail.</div>', unsafe_allow_html=True)
 st.markdown('<div class="rec-box"><b>Action:</b> Add 2-week Recursion remediation to C002.</div>', unsafe_allow_html=True)
@@ -64,7 +64,7 @@ st.markdown('<div class="section-card"><div class="section-title">Q7 – Recursi
 df = pd.DataFrame(q7)
 if not df.empty:
     fig = px.line(df, x="assessment_id", y="mastery_rate", markers=True)
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width='stretch')
 st.markdown('</div>', unsafe_allow_html=True)
 st.markdown('<div class="insight-box"><b>Insight:</b> Mastery flat 14% → 18.8% → 13.7%.</div>', unsafe_allow_html=True)
 st.markdown('<div class="rec-box"><b>Action:</b> Replace unit with spaced practice + live coding labs.</div>', unsafe_allow_html=True)

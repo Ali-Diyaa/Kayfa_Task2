@@ -33,7 +33,7 @@ st.markdown('<div class="section-card"><div class="section-title">Q5 – Engagem
 pts = pd.DataFrame(q5.get("points", []))
 if not pts.empty and "video_watch_hours" in pts:
     fig = px.scatter(pts, x="video_watch_hours", y="avg_grade", trendline="ols")
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width='stretch')
 st.markdown('</div>', unsafe_allow_html=True)
 st.markdown('<div class="insight-box"><b>Insight:</b> video r=0.402, logins r=0.328</div>', unsafe_allow_html=True)
 st.markdown('<div class="rec-box"><b>Action:</b> Promote video completion nudges in LMS.</div>', unsafe_allow_html=True)
@@ -41,7 +41,7 @@ st.markdown('<div class="rec-box"><b>Action:</b> Promote video completion nudges
 # Q8
 st.markdown('<div class="section-card"><div class="section-title">Q8 – Submission Timing</div>', unsafe_allow_html=True)
 df = pd.DataFrame(q8)
-if not df.empty: st.plotly_chart(px.bar(df, x="buffer_bin", y="grade_pct"), use_container_width=True)
+if not df.empty: st.plotly_chart(px.bar(df, x="buffer_bin", y="grade_pct"), width='stretch')
 st.markdown('</div>', unsafe_allow_html=True)
 st.markdown('<div class="insight-box"><b>Insight:</b> 3d+ early 79.1%, late 62.2%</div>', unsafe_allow_html=True)
 st.markdown('<div class="rec-box"><b>Action:</b> 48h early-bonus + late flag in gradebook.</div>', unsafe_allow_html=True)
@@ -49,7 +49,7 @@ st.markdown('<div class="rec-box"><b>Action:</b> 48h early-bonus + late flag in 
 # Q9
 st.markdown('<div class="section-card"><div class="section-title">Q9 – Term Trend Dip</div>', unsafe_allow_html=True)
 df = pd.DataFrame(q9)
-if not df.empty: st.plotly_chart(px.line(df, x="session_datetime", y="attendance_rate", markers=True), use_container_width=True)
+if not df.empty: st.plotly_chart(px.line(df, x="session_datetime", y="attendance_rate", markers=True), width='stretch')
 st.markdown('</div>', unsafe_allow_html=True)
 st.markdown('<div class="insight-box"><b>Insight:</b> Cohort-wide dip early March 2026 – Ramadan/Eid.</div>', unsafe_allow_html=True)
 st.markdown('<div class="rec-box"><b>Action:</b> Pre-schedule async catch-up for Ramadan 2027.</div>', unsafe_allow_html=True)
@@ -57,7 +57,7 @@ st.markdown('<div class="rec-box"><b>Action:</b> Pre-schedule async catch-up for
 # Q10
 st.markdown('<div class="section-card"><div class="section-title">Q10 – Age Bands</div>', unsafe_allow_html=True)
 df = pd.DataFrame(q10)
-if not df.empty: st.plotly_chart(px.bar(df, x="age_band", y="avg_grade"), use_container_width=True)
+if not df.empty: st.plotly_chart(px.bar(df, x="age_band", y="avg_grade"), width='stretch')
 st.markdown('</div>', unsafe_allow_html=True)
 st.markdown('<div class="insight-box"><b>Insight:</b> Age does not predict outcomes.</div>', unsafe_allow_html=True)
 st.markdown('<div class="rec-box"><b>Action:</b> No age-based interventions – focus on attendance/engagement.</div>', unsafe_allow_html=True)

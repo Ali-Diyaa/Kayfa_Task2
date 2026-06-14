@@ -51,7 +51,7 @@ if not df_q1.empty:
     fig = px.bar(df_q1, x="group_id", y="attendance_rate", color="status_label",
         color_discrete_map={"Below average":"#EF4444","Above average":"#2563EB"})
     fig.update_layout(height=320, margin=dict(t=10,b=10), yaxis_title="Attendance %")
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width='stretch')
 st.markdown('</div>', unsafe_allow_html=True)
 st.markdown('<div class="insight-box"><b>Insight:</b> Platform 75.8%. G07 60.2% and G10 65.4% below average.</div>', unsafe_allow_html=True)
 st.markdown('<div class="rec-box"><b>Action:</b> Trigger check-in workflow for G07/G10 instructors this week.</div>', unsafe_allow_html=True)
