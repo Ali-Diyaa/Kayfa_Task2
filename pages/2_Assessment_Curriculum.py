@@ -7,16 +7,27 @@ render_header("📝 Assessment & Curriculum", "Q2 • Q3 • Q6 • Q7")
 q2 = pd.DataFrame(find_all("q2_distribution"))
 q3 = pd.DataFrame(find_all("q3_distribution"))
 q6 = pd.DataFrame(find_all("q6_concepts"))
+
 # --- Fix concept → course mapping ---
 CONCEPT_COURSE_FIX = {
     "Overfitting & Regularization": "Machine Learning Basics",
     "Model Evaluation": "Machine Learning Basics",
+    "Clustering": "Machine Learning Basics",
     "Recursion": "Python Programming",
     "Joins & Merges": "Data Analytics Fundamentals",
     "Funnel Analytics": "Digital Marketing",
+    "SEO Basics": "Digital Marketing",
+    "Content Strategy": "Digital Marketing",
+    "Paid Ads": "Digital Marketing",
 }
 if not q6.empty and "concept_name" in q6.columns:
     q6["course_name"] = q6["concept_name"].map(CONCEPT_COURSE_FIX).fillna(q6["course_name"])
+    # deduplicate – the seed has ML concepts duplicated under Cybersecurity
+    q6 = q6.groupby("concept_name", as_index=False).agg(
+        fail_rate=("fail_rate", "max"),
+        course_name=("course_name", "first")
+    )
+    q6 = q6.sort_values("fail_rate", ascending=False)
 q7 = pd.DataFrame(find_all("q7_recursion_mastery"))
 
 # apply filters
@@ -58,7 +69,7 @@ if not q3.empty:
 
 # Q6 – Concept Failure Hotspots + Recursion Deep Dive
 if not q6.empty:
-    top = q6.head(12).copy()
+    top = q6.head(10).copy()
     fig = px.bar(top, x="fail_rate", y="concept_name", color="course_name", orientation="h",
         labels={c: human(c) for c in top.columns})
     fig.update_layout(yaxis={'categoryorder':'total ascending'})
