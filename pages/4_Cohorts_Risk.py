@@ -2,6 +2,8 @@
 import streamlit as st, plotly.express as px, pandas as pd
 from pathlib import Path
 from utils.db import find_all
+from utils.ui import inject_css, render_header, kpi_row, insight, rec, plotly_template, get_theme
+inject_css()
 
 def kpi_row(items):
     cols = st.columns(len(items))

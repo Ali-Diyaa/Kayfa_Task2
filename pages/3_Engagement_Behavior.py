@@ -2,6 +2,9 @@
 import streamlit as st, plotly.express as px, pandas as pd
 from pathlib import Path
 from utils.db import find_all
+from utils.ui import inject_css, render_header, kpi_row, insight, rec, plotly_template, get_theme
+inject_css()
+
 
 def kpi_row(items):
     cols = st.columns(len(items))
@@ -33,6 +36,7 @@ st.markdown('<div class="section-card"><div class="section-title">Q5 – Engagem
 pts = pd.DataFrame(q5.get("points", []))
 if not pts.empty and "video_watch_hours" in pts:
     fig = px.scatter(pts, x="video_watch_hours", y="avg_grade", trendline="ols")
+    fig.update_layout(template="plotly_white", paper_bgcolor="white", plot_bgcolor="white")
     st.plotly_chart(fig, width='stretch')
 st.markdown('</div>', unsafe_allow_html=True)
 st.markdown('<div class="insight-box"><b>Insight:</b> video r=0.402, logins r=0.328</div>', unsafe_allow_html=True)

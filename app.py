@@ -1,5 +1,6 @@
 # app.py
 import streamlit as st
+from utils.ui import theme_selector, inject_css
 
 st.set_page_config(
     page_title="Kayfa Academic Command Center",
@@ -7,6 +8,8 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+theme = theme_selector()   # <-- Light / Dark radio in sidebar
+inject_css()    
 
 # ── Global CSS – Attrition dashboard style ──
 st.markdown("""
