@@ -44,6 +44,20 @@ html, body,.stApp, [data-testid="stAppViewContainer"] { background:#FFFFFF!impor
 .badge-amber { background:#FEF3C7; color:#92400E; padding:2px 8px; border-radius:999px; font-size:.72rem; font-weight:700; }
 .badge-blue { background:#DBEAFE; color:#1E40AF; padding:2px 8px; border-radius:999px; font-size:.72rem; font-weight:700; }
 .badge-green { background:#DCFCE7; color:#166534; padding:2px 8px; border-radius:999px; font-size:.72rem; font-weight:700; }
+
+/* ── Login screen ── */
+.login-bg { display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:80vh; }
+.login-card { background:white; border-radius:18px; padding:2.5rem 2.8rem;
+              box-shadow:0 8px 30px rgba(10,36,99,.12); max-width:420px; width:100%; }
+.login-card h2 { font-family:'Plus Jakarta Sans',sans-serif; font-weight:800;
+                 color:#0A2463; text-align:center; margin-bottom:.3rem; }
+.login-card p  { text-align:center; color:#64748B; margin-bottom:1.6rem; font-size:.95rem; }
+button[kind="headerFormSubmit"] { background:#0A2463!important; color:white!important;
+    border-radius:10px!important; font-weight:700!important; border:none!important; }
+button[kind="headerFormSubmit"]:hover { background:#1447A6!important; }
+div[data-testid="stForm"] { border:none!important; background:transparent!important; }
+div[data-testid="stTextInputRootElement"] { border-radius:10px!important; }
+label[data-testid="stWidgetLabel"] { font-weight:600!important; color:#0A2463!important; }
 </style>
 """, unsafe_allow_html=True)
 
