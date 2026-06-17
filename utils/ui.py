@@ -44,20 +44,6 @@ html, body,.stApp, [data-testid="stAppViewContainer"] { background:#FFFFFF!impor
 .badge-amber { background:#FEF3C7; color:#92400E; padding:2px 8px; border-radius:999px; font-size:.72rem; font-weight:700; }
 .badge-blue { background:#DBEAFE; color:#1E40AF; padding:2px 8px; border-radius:999px; font-size:.72rem; font-weight:700; }
 .badge-green { background:#DCFCE7; color:#166534; padding:2px 8px; border-radius:999px; font-size:.72rem; font-weight:700; }
-
-/* ── Login screen ── */
-.login-bg { display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:80vh; }
-.login-card { background:white; border-radius:18px; padding:2.5rem 2.8rem;
-              box-shadow:0 8px 30px rgba(10,36,99,.12); max-width:420px; width:100%; }
-.login-card h2 { font-family:'Plus Jakarta Sans',sans-serif; font-weight:800;
-                 color:#0A2463; text-align:center; margin-bottom:.3rem; }
-.login-card p  { text-align:center; color:#64748B; margin-bottom:1.6rem; font-size:.95rem; }
-button[kind="headerFormSubmit"] { background:#0A2463!important; color:white!important;
-    border-radius:10px!important; font-weight:700!important; border:none!important; }
-button[kind="headerFormSubmit"]:hover { background:#1447A6!important; }
-div[data-testid="stForm"] { border:none!important; background:transparent!important; }
-div[data-testid="stTextInputRootElement"] { border-radius:10px!important; }
-label[data-testid="stWidgetLabel"] { font-weight:600!important; color:#0A2463!important; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -84,7 +70,6 @@ def explore(title, text): st.markdown(f'<div class="explore-box"><strong>🔍 De
 # --- Global sidebar filters – robust to old sessions ---
 def filter_bar():
     from utils.db import find_all
-    # ensure all keys exist, even if user ran an old version
     defaults = {"groups": [], "courses": [], "types": []}
     if "filters" not in st.session_state:
         st.session_state.filters = defaults.copy()
@@ -115,20 +100,24 @@ def apply_filters(df, group_col="group_id", course_col="course_name", type_col="
     if f.get("types") and type_col in df.columns: df = df[df[type_col].isin(f["types"])]
     return df
 
-# --- Plotly – always light, black text ---
-def style_fig(fig, x=None, y=None):
-    fig.update_layout(
+# --- Plotly – always light, black text, embed title ---
+def style_fig(fig, x=None, y=None, title=None):
+    layout_args = dict(
         template="plotly_white", paper_bgcolor="white", plot_bgcolor="white",
         font=dict(family="DM Sans", color="#1E293B"),
         colorway=["#2563EB","#22C55E","#F59E0B","#EF4444","#6366F1","#06b6d4"],
-        margin=dict(t=30,b=50,l=50,r=20), legend_title_text=""
+        margin=dict(t=60,b=50,l=50,r=20), legend_title_text=""
     )
+    if title:
+        layout_args["title"] = dict(text=title, x=0.01, xanchor='left', font=dict(size=16, color='#0A2463'))
+    fig.update_layout(**layout_args)
+    
     if x: fig.update_xaxes(title_text=human(x))
     if y: fig.update_yaxes(title_text=human(y))
     return fig
 
-def safe_scatter(df, x, y, **kw):
+def safe_scatter(df, x, y, title=None, **kw):
     import plotly.express as px
     try: fig = px.scatter(df, x=x, y=y, trendline="ols", **kw)
     except: fig = px.scatter(df, x=x, y=y, **kw)
-    return style_fig(fig, x, y)
+    return style_fig(fig, x, y, title=title)

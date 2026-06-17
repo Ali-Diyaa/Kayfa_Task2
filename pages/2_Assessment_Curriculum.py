@@ -8,7 +8,6 @@ q2 = pd.DataFrame(find_all("q2_distribution"))
 q3 = pd.DataFrame(find_all("q3_distribution"))
 q6 = pd.DataFrame(find_all("q6_concepts"))
 
-# --- Fix concept → course mapping ---
 CONCEPT_COURSE_FIX = {
     "Overfitting & Regularization": "Machine Learning Basics",
     "Model Evaluation": "Machine Learning Basics",
@@ -22,7 +21,6 @@ CONCEPT_COURSE_FIX = {
 }
 if not q6.empty and "concept_name" in q6.columns:
     q6["course_name"] = q6["concept_name"].map(CONCEPT_COURSE_FIX).fillna(q6["course_name"])
-    # deduplicate – the seed has ML concepts duplicated under Cybersecurity
     q6 = q6.groupby("concept_name", as_index=False).agg(
         fail_rate=("fail_rate", "max"),
         course_name=("course_name", "first")
@@ -30,7 +28,6 @@ if not q6.empty and "concept_name" in q6.columns:
     q6 = q6.sort_values("fail_rate", ascending=False)
 q7 = pd.DataFrame(find_all("q7_recursion_mastery"))
 
-# apply filters
 q2 = apply_filters(q2, course_col="type", type_col="type")
 q3 = apply_filters(q3); q6 = apply_filters(q6, course_col="course_name")
 
@@ -43,11 +40,10 @@ kpi_row([
 
 def show(title, fig, ins, act, exp_t="", exp=""):
     st.markdown(f'<div class="section-card"><div class="section-title">{title}</div></div>', unsafe_allow_html=True)
-    fig = style_fig(fig); st.plotly_chart(fig, width='stretch', theme=None)
+    fig = style_fig(fig, title=title); st.plotly_chart(fig, width='stretch', theme=None)
     insight(ins); rec(act)
     if exp: explore(exp_t, exp)
 
-# Q2
 if not q2.empty:
     fig = px.box(q2, x="type", y="score_pct", color="type", points="outliers",
         labels={c: human(c) for c in q2.columns})
@@ -55,9 +51,8 @@ if not q2.empty:
         "Assignments score lowest at 65.3% and vary the most between instructors – students get inconsistent expectations.",
         "Assessment Lead – Publish a common assignment rubric + a mid-point draft check, due next sprint.",
         "Which course drags assignments down?",
-        "Assignment variance is 2.1x higher than quizzes. C005 Digital Marketing and C002 Python drive 68% of low assignment scores – both also show high late-submission rates (Q8). Standardize to a 100-point rubric, add TA calibration.")
+        "Assignment scores are over twice as inconsistent as quizzes. C005 Digital Marketing and C002 Python drive 68% of low assignment scores – both also show high late-submission rates. Standardize to a 100-point rubric, add TA calibration.")
 
-# Q3
 if not q3.empty:
     fig = px.box(q3, x="course_name", y="score_pct", labels={c: human(c) for c in q3.columns})
     fig.update_xaxes(tickangle=-30)
@@ -67,7 +62,6 @@ if not q3.empty:
         "C005 root cause",
         "C005 has the highest late-submission rate at 34%, lowest video completion at 41%, and content is front-loaded – weeks 1-3 cover 60% of concepts. Spread the load, add checkpoint quizzes.")
 
-# Q6 – Concept Failure Hotspots + Recursion Deep Dive
 if not q6.empty:
     top = q6.head(10).copy()
     fig = px.bar(top, x="fail_rate", y="concept_name", color="course_name", orientation="h",
@@ -77,24 +71,18 @@ if not q6.empty:
         "Recursion in Python C002 fails 85.3% of students – 349 out of 409. This is a platform-wide blocker, not a cohort fluke.",
         "C002 Team – Ship a 2-week Recursion remediation module with spaced practice, due next sprint.",
         "Recursion – full root cause",
-        "Taught in Week 4, right over the Ramadan attendance dip (Q9). Average time-on-task is 42% below other concepts. 61% of failures come from G07/G10 – the two lowest-attendance groups. The C002 teaching team covers 3 cohorts concurrently with no TA support. Mastery is flat across 3 assessments: 14.0% → 18.8% → 13.7% (Q7). Recommendation: (1) move Recursion to Week 6 post-Ramadan, (2) add 3×45min live coding labs, (3) split instructor load, (4) require 2 auto-graded katas before the summative – target 40% mastery by Assessment 2.")
+        "Taught in Week 4, right over the Ramadan attendance dip. Average time-on-task is 42% below other concepts. 61% of failures come from G07/G10 – the two lowest-attendance groups. The C002 teaching team covers 3 cohorts concurrently with no TA support. Mastery is flat across 3 assessments: 14.0% → 18.8% → 13.7%. Recommendation: (1) move Recursion to Week 6 post-Ramadan, (2) add 3×45min live coding labs, (3) split instructor load, (4) require 2 auto-graded katas before the summative – target 40% mastery by Assessment 2.")
 
-# Q7 – Recursion Mastery – extra deep dive viz
-# Q7 – Recursion Mastery Deep Dive
 if not q7.empty:
-    # --- use a real time field if present ---
     time_col = next((c for c in ["assessment_date","date","timestamp","session_datetime","time","assessment_seq"] if c in q7.columns), None)
     
     if time_col:
-        # real time axis
         q7[time_col] = pd.to_datetime(q7[time_col], errors="ignore")
         q7 = q7.sort_values(time_col)
         x_col = time_col
         hover_name = "assessment_id" if "assessment_id" in q7.columns else None
         x_title = "Assessment Date"
     else:
-        # no date in the seed – build a chronological time axis
-        # C002 Recursion timeline: QZ → EX → EXF
         time_order = {
             "C002-QZ": 1, "CO02-QZ": 1,
             "C002-EX": 2, "CO02-EX": 2,
@@ -112,7 +100,6 @@ if not q7.empty:
         labels={c: human(c) for c in q7.columns}
     )
     
-    # show Assessment IDs as tick labels when using the synthetic time axis
     if x_col == "time_seq" and "assessment_id" in q7.columns:
         fig.update_xaxes(
             tickmode="array",
@@ -124,8 +111,7 @@ if not q7.empty:
         fig.update_xaxes(title_text=x_title)
 
     fig.add_hline(y=50, line_dash="dash", line_color="#EF4444", annotation_text="Pass threshold 50%")
-    fig = style_fig(fig, None, "mastery_rate")
-    # style_fig clears the x title, put it back
+    fig = style_fig(fig, None, "mastery_rate", title="Q7 – Recursion Mastery Deep Dive")
     fig.update_xaxes(title_text=x_title)
     
     st.plotly_chart(fig, width='stretch', theme=None)

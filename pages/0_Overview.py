@@ -2,7 +2,6 @@ import streamlit as st, plotly.express as px, plotly.graph_objects as go, pandas
 from utils.ui import render_header, kpi_row, insight, rec, style_fig, apply_filters, human
 from utils.db import find_all
 
-# --- Week #2 title ---
 st.markdown("<h1 style='font-family:Plus Jakarta Sans,sans-serif;font-weight:800;font-size:2.1rem;color:#0A2463;margin-bottom:.2rem'>Week #2 Task : Students analysis</h1>", unsafe_allow_html=True)
 
 render_header("🏠 Kayfa Command Center – Overview", "Executive snapshot across all 15 questions – use the sidebar filters to scope any page")
@@ -15,8 +14,6 @@ q14 = find_all("q14_at_risk")
 q6 = pd.DataFrame(find_all("q6_concepts"))
 q2 = pd.DataFrame(find_all("q2_distribution"))
 
-# --- Fix concept → course mapping ---
-# q6_concepts in the seed has ML concepts mislabeled as Cybersecurity
 CONCEPT_COURSE_FIX = {
     "Overfitting & Regularization": "Machine Learning Basics",
     "Model Evaluation": "Machine Learning Basics",
@@ -36,7 +33,6 @@ kpi_row([
   {"label":"Active Groups","value":f"{active_groups}","delta":"500+ students","color":"#6366F1"},
   {"label":"At-Risk Students","value":f"{at_risk_n}","delta":"Top priority outreach","color":"#EF4444"},
   {"label":"Weakest Concept","value":"Recursion","delta":"C002 – 85% fail","color":"#F59E0B"},
-  {"label":"Video Impact","value":"r = 0.402","delta":"Strongest engagement signal","color":"#06b6d4"},
 ])
 
 c1, c2, c3 = st.columns(3)
@@ -47,7 +43,7 @@ with c1:
     fig = go.Figure(go.Pie(labels=bands["Band"], values=bands["Students"], hole=.6,
         marker_colors=["#22C55E","#2563EB","#F59E0B","#FB923C","#EF4444"]))
     fig.add_annotation(text=f"<b>{avg_grade:.1f}%</b><br>Avg", x=.5, y=.5, showarrow=False)
-    fig = style_fig(fig); st.plotly_chart(fig, width='stretch', theme=None)
+    fig = style_fig(fig, title="Grade Band Mix"); st.plotly_chart(fig, width='stretch', theme=None)
     st.markdown('</div>', unsafe_allow_html=True)
 
 with c2:
@@ -55,7 +51,7 @@ with c2:
     att = pd.DataFrame({"Status":["Above Average","Below Average"], "Groups":[8,2]})
     fig = px.pie(att, names="Status", values="Groups", hole=.6,
         color_discrete_map={"Above Average":"#2563EB","Below Average":"#EF4444"})
-    fig = style_fig(fig); st.plotly_chart(fig, width='stretch', theme=None)
+    fig = style_fig(fig, title="Attendance Status"); st.plotly_chart(fig, width='stretch', theme=None)
     st.markdown('</div>', unsafe_allow_html=True)
 
 with c3:
@@ -63,10 +59,9 @@ with c3:
     if not q2.empty:
         mix = q2["type"].value_counts().reset_index(); mix.columns=["Assessment Type","Count"]
         fig = px.pie(mix, names="Assessment Type", values="Count", hole=.6)
-        fig = style_fig(fig); st.plotly_chart(fig, width='stretch', theme=None)
+        fig = style_fig(fig, title="Assessment Type Mix"); st.plotly_chart(fig, width='stretch', theme=None)
     st.markdown('</div>', unsafe_allow_html=True)
 
-# Trend + hotspots
 c1, c2 = st.columns([1.6,1])
 with c1:
     st.markdown('<div class="section-card"><div class="section-title">Cohort Performance Trend</div></div>', unsafe_allow_html=True)
@@ -74,7 +69,7 @@ with c1:
     q15 = apply_filters(q15, "group_id")
     if not q15.empty:
         fig = px.line(q15, x="assessment_seq", y="avg_score", color="group_id", markers=True)
-        fig = style_fig(fig, "assessment_seq", "avg_score")
+        fig = style_fig(fig, "assessment_seq", "avg_score", title="Cohort Performance Trend")
         st.plotly_chart(fig, width='stretch', theme=None)
     st.markdown('</div>', unsafe_allow_html=True)
 
@@ -82,7 +77,6 @@ with c2:
     st.markdown('<div class="section-card"><div class="section-title">Top Failing Concepts</div></div>', unsafe_allow_html=True)
     if not q6.empty:
         top = q6.head(6).copy()
-        # human-readable column names for Plotly
         top_plot = top.rename(columns=lambda c: human(c))
         fig = px.bar(top_plot, x="Failure Rate", y="Concept", color="Course", orientation="h",
             color_discrete_map={
@@ -92,9 +86,9 @@ with c2:
                 "Digital Marketing": "#F59E0B",
                 "Cybersecurity Essentials": "#EF4444"
             })
-        fig = style_fig(fig); fig.update_layout(yaxis={'categoryorder':'total ascending'})
+        fig = style_fig(fig, title="Top Failing Concepts"); fig.update_layout(yaxis={'categoryorder':'total ascending'})
         st.plotly_chart(fig, width='stretch', theme=None)
     st.markdown('</div>', unsafe_allow_html=True)
 
-insight("Attendance at 75.8% is 4.2pp below target, with 2 cohorts dragging the average. Engagement via video is the strongest predictor of grades, while Recursion in Python C002 is a systemic blocker – 85% fail rate, flat mastery over 3 assessments. At-risk scoring has flagged a focused outreach list.")
+insight("Attendance at 75.8% is 4.2% below target, with 2 cohorts dragging the average. Engagement via video is the strongest predictor of grades, while Recursion in Python C002 is a systemic blocker – 85% fail rate, flat mastery over 3 assessments. At-risk scoring has flagged a focused outreach list.")
 rec("Academic Ops – 1) Daily attendance nudges for G07/G10 this week, 2) Ship Recursion remediation module to C002 by next sprint, 3) Promote video-completion nudges LMS-wide. See detail pages for full action plans.")
